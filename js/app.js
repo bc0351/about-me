@@ -1,6 +1,6 @@
 'use strict';
 
-function guessingGame() {
+function myGuessingGame() {
     let siteVisitor = prompt('Hello. What is your name?');
 
     alert(`Welcome, ${siteVisitor}.\n\nLet's see what you know about me.\n\nPlease answer the following questions with Yes [Y/Yes] or No [N/No].`);
