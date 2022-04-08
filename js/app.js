@@ -140,7 +140,7 @@ function btnGuessingGame() {
     alert('Try to guess which car maker is my favorite. \n\n You have six attempts.');
 
     for (let i = 0; i < 7; i++) {
-        let userGuess = prompt(`Which car brand from the following list do you think is my favorite?\n\n${cars.toString()}.\n\n[Response is case insensitive]\n\nYou have ${6 - i} attempts remaining.}`);
+        let userGuess = prompt(`Which car brand from the following list do you think is my favorite?\n\n${cars.toString()}.\n\n[Response is case insensitive]\n\nYou have ${6 - i} attempts remaining.`);
         if (favorite.toLowerCase() === userGuess.toLowerCase()) {
             score++;
             alert(`Congrats! You guessed correct on try ${i + 1}!\nYou must be some sort of genius!`);
