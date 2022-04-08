@@ -2,112 +2,127 @@
 <html lang="en">
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <title>About Me</title>
 </head>
 
 <body>
-    <table class="container">
-        <tr>
-            <th>
-                <h1>About Me</h1>
-            </th>
-        </tr>
-        <tr>
-            <td>
-                <p>I have been working in the financial services sector for the past ten years with a few different
-                    companies.
-                    Prior to that, I attended Stevens Institute of Technology where I received a Master's of
-                    Engineering in
-                    Systems Engineering and a Bachelor's of Engineering in Engineering Management in 2013. I have
-                    also served in the
-                    Marines from 2003 through 2008 as an infantryman.</br></br>My goals for this course are to
-                    further my
-                    skillsets and possibly transition into a more technology-focused occupation.</p>
-            </td>
-        </tr>
-        </tr>
-        <tr>
-            <td>
-                <button onclick="btnGuessingGame()" title="If you're really that bored.">Guesing Game</button>
-            </td>
-        </tr>
-        <tr>
-            <th>
-                <h2>Professional Experience</h2>
-            </th>
-        </tr>
-        <tr></tr>
-        <tr>
-            <td>
-                <h3>Summary</h3>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p>Analytical and process-oriented software developer with ten years of experience in the financial
-                    services
-                    industry. Experience includes financial planning & analysis; portfolio risk and business risk
-                    management;
-                    control engineering; process automation; and wealth management technology. Keeps current with
-                    standard
-                    and
-                    emerging industry technology.</p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <h3>Career Timeline</h3>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <ul>
-                    <li>Verizon, Basking Ridge, NJ, Manager, Jan 2020 – Present</li>
-                    <li>Morgan Stanley Wealth Management, New York, NY, AVP, Jun 2017 - Jan 2020</li>
-                    <li>Goldman Sachs & Co., Jersey City, NJ, Associate, May 2015 - Jun 2017</li>
-                    <li>GE Capital, Cedar Rapids, IA, Analyst, Nov 2013 - Jan 2015</li>
-                    <li>UBS AG, Jersey City, NJ, Intern, May 2012 - Aug 2012</li>
-                    <li>United States Marine Corps, Camp Lejeune, NC, Sergeant, Jan 2003 - Sep 2008</li>
-                </ul>
-            </td>
-        </tr>
-        <tr>
-            <th>
-                <h2>Education Summary</h2>
-            </th>
-        </tr>
-        <tr>
-            <td>
-                <ul>
-                    <li>Master of Engineering - Systems Engineering - 2013, Stevens Institute of Technology</li>
-                    <li>Bachelor of Engineering - Engineering Management - 2013, Stevens Institute of Technology</li>
-                </ul>
-            </td>
-        </tr>
-        <tr>
-            <th>
-                <h2>Top 10 Movies</h2>
-            </th>
-        </tr>
-        <tr>
-            <td>
-                <ol>
-                    <li>Shawshank Redemption</li>
-                    <li>Green Mile</li>
-                    <li>Saving Private Ryan</li>
-                    <li>John Wick</li>
-                    <li>John Wick 2</li>
-                    <li>John Wick 3</li>
-                    <li>Up</li>
-                    <li>Lion King</li>
-                    <li>Snow White</li>
-                    <li>The Little Mermaid</li>
-                </ol>
-            </td>
-        </tr>
-    </table>
+    <div class="sidenav">
+        <div class="profile">
+            <img src="img/profile.png" alt="profile_picture">
+            <h3>Ben Choe</h3>
+        </div>
+
+        <a href="#about">About Me</a>
+        <a href="#work">Work Experience</a>
+        <a href="#edu">Education Summary</a>
+        <a href="" onclick="btnGuessingGame()">Guessing Game</a>
+    </div>
+    <div class="container">
+        <table>
+            <tr>
+                <th>
+                    <h1 id="about">About Me</h1>
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    <p>I have been working in the financial services sector for the
+                        past
+                        ten years with a
+                        few different
+                        companies.
+                        Prior to that, I attended Stevens Institute of Technology where I received a Master's of
+                        Engineering in
+                        Systems Engineering and a Bachelor's of Engineering in Engineering Management in 2013. I have
+                        also served in the
+                        Marines from 2003 through 2008 as an infantryman.</br></br>My goals for this course are to
+                        further my
+                        skillsets and possibly transition into a more technology-focused occupation.</p>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <h2>Professional Experience</h2>
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    <h3>Summary</h3>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p id="work">Analytical and process-oriented software developer with ten years of experience in
+                        the
+                        financial
+                        services
+                        industry. Experience includes financial planning & analysis; portfolio risk and business
+                        risk
+                        management;
+                        control engineering; process automation; and wealth management technology. Keeps current
+                        with
+                        standard
+                        and
+                        emerging industry technology.</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3>Career Timeline</h3>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <ul>
+                        <li>Verizon, Basking Ridge, NJ, Manager, Jan 2020 – Present</li>
+                        <li>Morgan Stanley Wealth Management, New York, NY, AVP, Jun 2017 - Jan 2020</li>
+                        <li>Goldman Sachs & Co., Jersey City, NJ, Associate, May 2015 - Jun 2017</li>
+                        <li>GE Capital, Cedar Rapids, IA, Analyst, Nov 2013 - Jan 2015</li>
+                        <li>UBS AG, Jersey City, NJ, Intern, May 2012 - Aug 2012</li>
+                        <li>United States Marine Corps, Camp Lejeune, NC, Sergeant, Jan 2003 - Sep 2008</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <h2 id="edu">Education Summary</h2>
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    <ul>
+                        <li>Master of Engineering - Systems Engineering - 2013, Stevens Institute of Technology</li>
+                        <li>Bachelor of Engineering - Engineering Management - 2013, Stevens Institute of Technology
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <h2>Top 10 Movies</h2>
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    <ol>
+                        <li>Shawshank Redemption</li>
+                        <li>Green Mile</li>
+                        <li>Saving Private Ryan</li>
+                        <li>John Wick</li>
+                        <li>John Wick 2</li>
+                        <li>John Wick 3</li>
+                        <li>Up</li>
+                        <li>Lion King</li>
+                        <li>Snow White</li>
+                        <li>The Little Mermaid</li>
+                    </ol>
+                </td>
+            </tr>
+        </table>
+    </div>
     <script src="js/app.js"></script>
 </body>
 
