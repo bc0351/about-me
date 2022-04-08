@@ -1,12 +1,10 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+html, body, div, span, applet, object, iframe, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
 b, u, i, center,
 dl, dt, dd, ul, li,
 fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed, 
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
@@ -45,9 +43,50 @@ html, body {
     align-items: flex-start;
     align-content: center;
 }
-ol, ul {
+h1 {
+    font-size: 16pt;
+    font-weight: bold;
+    background-color: gray;
+    color:white
+} 
+h2 {
+    font-size: 14pt;
+    font-weight: bold;
+    background-color: gray;
+    color:white
+}
+h3{
+    font-size: 12pt;
+    font-weight: bold;
+}
+h4 {
+    font-size: 10pt;
+    font-weight: bold;
+    text-decoration: underline;
+}
+h5 {
+    font-size: 10pt;
+    font-weight: bold;
+    font-style:italic;
+
+} 
+h6 {
+    font-size: 10pt;
+    font-style:italic;
+}
+ol {
 	list-style: none;
-    list-style-type: decimal-leading-zero;
+    list-style-type: decimal;
+    padding-left: 3em
+}
+
+ul {
+    list-style: none;
+    list-style-type: disc;
+    padding-left: 3em
+}
+p {
+    font-size: 12pt;
 }
 blockquote, q {
 	quotes: none;
@@ -66,4 +105,14 @@ button {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+}
+table, caption, tbody, tfoot, thead, th, tr,td {
+    line-height:12pt;
+}
+th {
+    line-height: 16pt;
+    fill: gray;
+}
+td{
+    padding-bottom:10pt
 }
