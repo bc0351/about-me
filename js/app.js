@@ -156,5 +156,5 @@ function btnGuessingGame() {
 
     }
     let totalscore = ((score / 7).toFixed(2) * 100).toString() + '%';
-    alert(`Great job! You earned a score of ${totalscore}`);
+    alert(`Great job! You earned a score of ${totalscore}, ${score} out of 7.`);
 }
