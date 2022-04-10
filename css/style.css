@@ -6,7 +6,6 @@
     background-color: transparent;
     font: inherit;
     color: #282828;
-    line-height: 20pt;
 }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
@@ -303,7 +302,6 @@ table {
 }
 
 #background-img img {
-    /* display: block; */
     position: fixed;
     object-fit: cover;
     top: 0;
