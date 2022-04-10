@@ -6,6 +6,7 @@
     background-color: transparent;
     font: inherit;
     color: #282828;
+    line-height: 20pt;
 }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
@@ -13,6 +14,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 li, ol, p, ul {
+    line-height: 20pt;
     font-size: 12pt;
     color: #282828;
     text-align: justify;
@@ -109,7 +111,7 @@ html, body {
     color: #fff;
     text-align: left;
     text-decoration: none;
-    font-size: 12pt;
+    font-size: 10pt;
     line-height: 24pt;
     position: relative;
 
