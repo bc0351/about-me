@@ -15,21 +15,18 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 li, ol, p, ul {
     font-size: 12pt;
     color: #282828;
+    text-align: justify;
+    text-justify: inter-word;
     margin-left: 1.5em;
+    padding-bottom: 10pt;
 }
 
 html, body {
+    display: flex;
     font-family: Arial, Helvetica, sans-serif;
     background-color: transparent;
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-}
-
-.container {
-    display:block;
+    min-width: 100vw;
     min-height: 100vh;
-    width:75%;
 }
 
 .transparent-wrapper {
@@ -42,7 +39,7 @@ html, body {
 
 .content {
     margin: 0 auto;
-    max-width: 1auto;
+    width: 100vw;
     min-height: 100vh;
     display: block;
     align-items: top;
@@ -53,11 +50,14 @@ html, body {
 
 .grid-wrappper {
     display: grid;
-    flex-grow: 1;
-    flex-direction: column;
     grid-template-columns: 180px auto;
     grid-template-rows: 100vw;
     grid-template-areas: "1" "2";
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    z-index: 2;
 }
 
 .grid-cell-container {
@@ -66,12 +66,13 @@ html, body {
     margin-left: 180px;
     font-size: 12pt;
     padding: 0;
+    z-index: 1;
 }
 
 .sidenav {
     display: block;
     font-family: Arial, Helvetica, sans-serif;
-    min-height: 100vh;
+    height: 100vh;
     width: 180px;
     position: fixed;
     z-index: 1;
@@ -80,7 +81,6 @@ html, body {
     right: 0;
     bottom: 0;
     background-color: #202020;
-    overflow-x: visible;
     padding-top: 2vh;
 }
 
@@ -126,7 +126,7 @@ html, body {
     text-align: left;
     text-decoration: none;
     font-size: 12pt;
-    line-height: 24pt;
+    height: 24pt;
     position: relative;
 }
 
@@ -157,7 +157,7 @@ html, body {
 
 h1, h2, h3, h4, h5, h6 {
     text-align: left;
-    padding-bottom: 5px
+    padding: 0;
 }
 
 h1 {
@@ -214,25 +214,18 @@ blockquote:after, blockquote:before, q:after, q:before {
     content: none
 }
 
-table {
-    margin: 30px;
-}
-
-caption, table, tbody, th, thead, tr {
-    line-height: 14pt;
+th, tr, td {
     padding-bottom: 10pt;
 }
 
-th {
-    line-height: 16pt;
-}
-
-table ul, table ol, table li {
-    padding-bottom: 4pt;
-}
-
-td {
-    padding-bottom: 10pt
+table {
+    margin: 30px;
+    min-width: 40%;
+    max-width:50%;
+    top:0;
+    left: 180px;
+    overflow: scroll;
+    z-index: 3;
 }
 
 @-webkit-keyframes background-cross-fade {
@@ -324,16 +317,18 @@ td {
 }
 
 #background-img img {
-    display:block;
-    position: absolute;
+    /* display: block; */
+    position: fixed;
     object-fit: cover;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     min-height: 100vh;
-    width:100vw;
+    max-height: 100%;
+    width: 100%;
     overflow: hidden;
+    z-index: -2;
 }
 
 #background-img img {
