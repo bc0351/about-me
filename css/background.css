@@ -88,25 +88,30 @@
 
 #background-img {
     position: relative;
-    height:100vh;
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+    width: 100vw;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    width: 100vw;
     overflow: hidden;
     z-index:-2;
 }
 
 #background-img img {
     position: absolute;
-    min-height: 100vh;
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
     width: 100vw;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     z-index: -3;
+    overflow: hidden;
 }
 
 #background-img img {
