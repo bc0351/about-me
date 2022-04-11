@@ -212,7 +212,7 @@ th, tr, td {
 table {
     margin: 30px;
     min-width: 40%;
-    max-width:50%;
+    max-width: 65%;
     top:0;
     left: 180px;
     overflow-y: scroll;
